@@ -6,28 +6,25 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="p-2 bg-purple-200">
+    <div className="p-2">
       <div className="flex justify-between">
         <img src={logo} alt="logo" className="h-7" />
         <div className="hidden md:flex">
           <ul className="flex flex-row">
             <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              Home
+              <a href="#home">Home</a>
             </li>
             <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              About Me
+              <a href="#about">About Me</a>
             </li>
             <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              Skills
+              <a href="#skills">Skills</a>
             </li>
             <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              Portfolio
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              Companies
-            </li>
-            <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              Contact Me
+              <a href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -68,22 +65,19 @@ const Navbar = () => {
           {toggle ? (
             <ul className="flex flex-col mt-8 p-4 bg-gray-300">
               <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                Home
+                <a href="#home">Home</a>
               </li>
               <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                About Me
+                <a href="#about">About Me</a>
               </li>
               <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                Skills
+                <a href="#skills">Skills</a>
               </li>
               <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                Portfolio
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                Companies
-              </li>
-              <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                Contact Me
+                <a href="#contact">Contact Me</a>
               </li>
             </ul>
           ) : null}

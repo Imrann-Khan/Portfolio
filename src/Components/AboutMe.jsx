@@ -11,8 +11,11 @@ const AboutMe = () => {
       <div className='h-[320px] p-1 w-full bg-purple-500 items-center'>
       <h2 className='text-white mt-[-12%] text-[50px] font-bold text-center'>About <span className='text-black'> Me</span></h2>
       <h2 className='mt-20 text-[18px] text-white px-30 md:px-40 lg:px-40 text-center lg:text-[20px]'>
-        I am Software developer working in IT industry from last 6 years as Full Stack Developer. I am expert in UI/UX design, Front-end and Back-end Development.
-        I have good programming skill in C, C++, Java and also Python. I am a regular problem solver in Codeforces.
+        I am dedicated to continuous skill development and passionate about
+        software engineering and I am enthusiastic about generating innovative
+        ideas in this field. As a quick learner, I thrive on acquiring new knowledge
+        and possess valuable experience collaborating on team projects.
+
       </h2>
       </div>
       <div className='flex flex-col w-full items-center mt-[-80px] md:flex-row lg:flex-row justify-around'>

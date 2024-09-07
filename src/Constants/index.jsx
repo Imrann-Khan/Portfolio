@@ -1,13 +1,18 @@
 import { angular, cognizantLogo,
      facebook, firebase, instagram, ionic, linkdin, mysql,
       nodejs,
-      react, typescript, wellsLogo, wiuLogo, youtube } from "../assets"
+      react, typescript, wellsLogo, wiuLogo, youtube,  } from "../assets"
+import python from "../assets/puthon.png";
+import java from "../assets/java.png";
+import cpp from "../assets/cpp_logo.png";
+import tailwind from "../assets/tailwind.png";
+import comp from "../assets/Competitive-Programming.png";
 
 export const AppText={
     hello:'Hello,',
     Iam:'I am ',
-    RahulSanap:'Rahul Sanap',
-    aboutMeDescripion:'I am software developer working in IT industry from  last 6 Years as Full stack developer. Expert in UI/UX design, Front-end  and Back-end Development',
+    RahulSanap:'Imran Khan',
+    aboutMeDescripion:'I worked as Developer and currently I am a Frontend Software Developer. I am passionate about learning new technologies and always ready to take new challenges. I am competitive coder and I love to solve problems.',
     Skills:'Skills & ',
     Experties:'Experties',
     UIUXDesigner:'UI/UX Designer',
@@ -18,8 +23,8 @@ export const AppText={
     CompaniesI:'Companies I ',
     WorkedFor:'Worked For',
     Contact:'Contact ',
-    Us:'Us',
-    copywriteText:'Copyright by Rahul Sanap @2023'
+    Us:'Me',
+    copywriteText:'Copyright by Imran @2024'
 
 }
 
@@ -40,7 +45,13 @@ export const aboutSection=[
         id:3,
         image:'https://img.freepik.com/premium-vector/back-end-developer-working-laptop_701961-1383.jpg?w=2000',
         title:'Back-end Developer',
-        desc:'Expert in UI/UX designing software like figma'
+        desc:'Expert in NodeJS'
+    },
+    {
+        id:4,
+        image:comp,
+        title:'Competitive Programmer',
+        desc:'Mid level Competitive Programmer'
     }
 ]
 
@@ -50,69 +61,66 @@ export const skillsList=[
         icon:angular
     },
     {
-        id:1,
+        id:2,
         icon:react
     },
     {
-        id:1,
+        id:3,
         icon:typescript
     },
     {
-        id:1,
+        id:4,
         icon:firebase
     },
     {
-        id:1,
-        icon:ionic
+        id:5,
+        icon:python
     },
     {
-        id:1,
-        icon:mysql
+        id:6,
+        icon:tailwind
     },
     {
-        id:1,
+        id:7,
         icon:react
     },
     {
-        id:1,
-        icon:typescript
+        id:8,
+        icon:java
     },
     {
-        id:1,
-        icon:firebase
+        id:9,
+        icon:cpp
     },
     {
-        id:1,
+        id:10,
         icon:nodejs
     },
-
 ]
 
 export const workDetail=[
     { 
         id:1,
-        year:'2021',
-        compnayName:'Wells Fargo',
-        position:'Lead Software Developer'
+        details:'Codeforces, Atcoder',
+        position:'Competitive Programmer'
     },
     { 
-        id:1,
-        year:'2020',
-        compnayName:'Empowered Benefits',
-        position:'Full Stack Developer'
+        id:2,
+        details:'Python, Java, C++',
+        position:' Software Developer'
     },
     { 
-        id:1,
-        year:'2018',
-        compnayName:'Western Illionois University',
-        position:'Full Stack Developer'
+        id:3,
+        
+        details:'MERN Stack Developer',
+        position:' Full Stack Developer'
     },
     { 
-        id:1,
-        year:'2016',
-        compnayName:'Cognizant',
-        position:'Programmer Analyst'
+        id:4,
+        details:' Western Illionois University',
+        position:'Linux Expert'
     },
+    
 ]
 
 export const portfolio=[
@@ -170,17 +178,17 @@ export const socialNetwork=[
         url:'https://www.instagram.com/tubeguruji/'
     },
     {
-        id:1,
+        id:2,
         logo:youtube,
         url:'https://www.youtube.com/channel/UC33Tc4FCgd_to314_b2hNTg',
     },
     {
-        id:1,
+        id:3,
         logo:linkdin,
         url:'https://www.linkedin.com/in/rahul-sanap-652920108/'
     },
     {
-        id:1,
+        id:4,
         logo:facebook,
         url:'https://www.facebook.com/rahul.sanap1'
     },
