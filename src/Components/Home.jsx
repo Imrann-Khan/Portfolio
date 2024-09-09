@@ -8,7 +8,7 @@ import personal from "../assets/personal.jpg";
 
 const Home = () => {
   return (
-    <div className="mt-5 px-4 md:px-20 items-center flex flex-col md:flex-row md:justify-evenly">
+    <div className="mt-14 px-4 md:px-20 items-center flex flex-col md:flex-row md:justify-evenly">
         <div className='flex w-full flex-col  items-start content-end'>
             <h1 className='text-[30px] md:text-[35px] font-bold '>Hello, </h1>
             <div className='flex'>
@@ -21,7 +21,7 @@ const Home = () => {
                 }}
             />
             </div>
-        <h1 className="text-[20px] mt-3 lg:text-[25px] text-gray-800">
+        <h1 className="text-[15px] mt-3 lg:text-[22px] text-gray-800">
           I worked as Developer and currently I am a Frontend Software
           Developer. I am passionate about learning new technologies and
           always ready to take new challenges. I am competitive coder and I love to solve problems.

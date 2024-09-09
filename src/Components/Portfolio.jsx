@@ -27,8 +27,6 @@ const Portfolio = () => {
   return (
     <div className='mt-5 flex justify-center flex-col'>
         <div className='flex flex-row px-6 md:px-0 items-center justify-center'>
-        {/* <h1 className='text-[40px] font-bold'>{AppText.Creative}
-        <span className='text-purple-600'>{AppText.Portfolio}</span></h1> */}
         <SectionHeading firstTitle={AppText.Creative} secondTitle={AppText.Portfolio} />
         <img src={robo} alt='' className="w-[70px] ml-5 animate-bounce"/>
         </div>

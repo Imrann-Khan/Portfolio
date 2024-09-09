@@ -1,90 +1,102 @@
-import React from "react";
-import logo from "../assets/logo.png";
-import { useState } from "react";
+import React, { useState } from "react";
+import { logo } from "./../assets";
 
-const Navbar = () => {
+
+
+const NavBar = () => {
   const [toggle, setToggle] = useState(false);
+  
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const section = document.querySelector(targetId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
-    <div className="p-2">
-      <div className="flex justify-between">
-        <img src={logo} alt="logo" className="h-7" />
-        <div className="hidden md:flex">
-          <ul className="flex flex-row">
-            <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              <a href="#home">Home</a>
-            </li>
-            <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              <a href="#about">About Me</a>
-            </li>
-            <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              <a href="#skills">Skills</a>
-            </li>
-            <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li className="mr-3 text-[20px] transition-all ease-in-out hover:scale-110 cursor-pointer">
-              <a href="#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-        <div className="md:hidden lg:hidden">
-          {toggle ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
+    <div className="w-full p-[10px] flex justify-between items-center fixed top-0 left-0 bg-white z-50 shadow-lg">
+      <img src={logo} alt="logo" className="h-[30px]" />
+      <div>
+        <ul className="hidden md:flex">
+          <li className="mr-5 hover:scale-110">
+            <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')}>
+              Home
+            </a>
+          </li>
+          <li className="mr-5 hover:scale-110">
+            <a href="#about" onClick={(e) => handleSmoothScroll(e, '#about')}>
+              About
+            </a>
+          </li>
+          <li className="mr-5 hover:scale-110">
+            <a href="#skills" onClick={(e) => handleSmoothScroll(e, '#skills')}>
+              Skills
+            </a>
+          </li>
+          <li className="mr-5 hover:scale-110">
+            <a href="#resume" onClick={(e) => handleSmoothScroll(e, '#resume')}>
+              Resume
+            </a>
+          </li>
+          <li className="mr-5 hover:scale-110">
+            <a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')}>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div className="flex flex-col items-end">
+          {!toggle ?  
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
               onClick={() => setToggle(!toggle)}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 cursor-pointer float-right"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
+              viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+              className="w-6 h-6 cursor-pointer md:hidden">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
             </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              onClick={() => setToggle(!toggle)}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 cursor-pointer"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
+          : 
+            <svg onClick={() => setToggle(!toggle)}
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              strokeWidth={1.5} stroke="currentColor" 
+              className="w-6 cursor-pointer md:hidden h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
-          )}
-          {toggle ? (
-            <ul className="flex flex-col mt-8 p-4 bg-gray-300">
-              <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                <a href="#home">Home</a>
+          }
+          {toggle && (
+            <ul className="md:hidden absolute flex mt-8 flex-col bg-gray-200 p-2 rounded-sm">
+              <li className="mr-5 p-3 hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">
+                <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')}>
+                  Home
+                </a>
               </li>
-              <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                <a href="#about">About Me</a>
+              <li className="mr-5 p-3 hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">
+                <a href="#about" onClick={(e) => handleSmoothScroll(e, '#about')}>
+                  About
+                </a>
               </li>
-              <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                <a href="#skills">Skills</a>
+              <li className="mr-5 p-3 hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">
+                <a href="#skills" onClick={(e) => handleSmoothScroll(e, '#skills')}>
+                  Skills
+                </a>
               </li>
-              <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                <a href="#portfolio">Portfolio</a>
+              <li className="mr-5 p-3 hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">
+                <a href="#resume" onClick={(e) => handleSmoothScroll(e, '#resume')}>
+                  Resume
+                </a>
               </li>
-              <li className="p-2 mr-3 transition-all ease-in-out hover:scale-110 cursor-pointer">
-                <a href="#contact">Contact Me</a>
+              <li className="mr-5 p-3 hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">
+                <a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')}>
+                  Contact
+                </a>
               </li>
             </ul>
-          ) : null}
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;
+

@@ -3,13 +3,13 @@ import {laptop,wave} from '../assets/index'
 import aboutSection from "../Constants/index"
 
 
-const AboutMe = () => {
+const About = () => {
   return (
     <div>
       <img src={wave} alt='wave.svg'/>
       <img src={laptop} alt='laptop.png' className='absolute w-[200px] mt-[-25%] md:mt-[-27%] md:w-[300px] lg:mt-[-25%] lg:w-[350px]'/>
-      <div className='h-[320px] p-1 w-full bg-purple-500 items-center'>
-      <h2 className='text-white mt-[-12%] text-[50px] font-bold text-center'>About <span className='text-black'> Me</span></h2>
+      <div className='h-[280px] p-1 w-full bg-purple-500 items-center'>
+      <h2 className='text-white mt-[-12%] text-[40px] font-bold text-center'>About <span className='text-black'> Me</span></h2>
       <h2 className='mt-20 text-[18px] text-white px-30 md:px-40 lg:px-40 text-center lg:text-[20px]'>
         I am dedicated to continuous skill development and passionate about
         software engineering and I am enthusiastic about generating innovative
@@ -34,4 +34,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default About;

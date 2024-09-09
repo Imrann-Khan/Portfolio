@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Navbar from './Components/Navbar';
 import Home from "./Components/Home";
-import AboutMe from "./Components/AboutMe";
+import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
@@ -16,7 +16,7 @@ function App() {
       {/* Intro */}
       <Home />
       {/* About Me */}
-      <AboutMe/>
+      <About/>
       {/* Skills */}
       <Skills />
       {/* Portfolio */}
